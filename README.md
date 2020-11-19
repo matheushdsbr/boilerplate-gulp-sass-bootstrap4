@@ -4,17 +4,17 @@ Boilerplate using Gulp, Sass, Bootstrap 4
 
 ## Installation
 
-#### 1 - Clone Repository
+#### 1 - Install Yarn
+
+```
+https://classic.yarnpkg.com/en/docs/install
+```
+
+#### 2 - Clone Repository
 
 ```
 git clone https://github.com/matheushenrique1/boilerplate-gulp-sass-bootstrap4.git
 
-```
-
-#### 2 - Install Yarn
-
-```
-https://classic.yarnpkg.com/en/docs/install
 ```
 
 ## How it works
