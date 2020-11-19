@@ -1,13 +1,13 @@
 # Boilerplate - Matheus Henrique
 
-Boilerplate using Yarn, Gulp, Bootstrap, e SASS.
+Boilerplate using Gulp, Sass, Bootstrap 4
 
 ## Installation
 
 #### 1 - Clone Repository
 
 ```
-git clone https://github.com/matheushenrique1/boilerplate-yarn.git
+git clone https://github.com/matheushenrique1/boilerplate-gulp-sass-bootstrap4.git
 
 ```
 
@@ -17,27 +17,30 @@ git clone https://github.com/matheushenrique1/boilerplate-yarn.git
 https://classic.yarnpkg.com/en/docs/install
 ```
 
-#### 2 - Install Dependencies
+#### 3 - How it works
+
+It uses Gulp as a task manager.
+
+Some tasks are {
+  copyjs: copy bootstrap, jquery, popper.js to the js folder.
+  copystyle: copy style bootstrap to the folder css.
+  watch: to monitor changes to the scss and js files.
+}
+
+#### 4 - Install Dependencies
 
 ```
 yarn install
 ```
 
-## How to Start (Yarn - Gulp)
-
-1 - Copy the js files
-
-```
-yarn copyjs
-```
-
-2.1 - Compiles the files SCSS
-
-2.2 - Initializes the localhost server.
-http://localhost:3000/
+#### 5 - To initializes the localhost server. http://localhost:3000/
 
 ```
 yarn start
 ```
 
-# boilerplate-1
+#### 4 - How to use
+
+1- check the _variables.scss file and configure the best way for your project.
+
+2- in the site folder, check what you will need for your project, if you don't need something delete it and if you need something, you create a file with the same naming pattern. Don't forget to import your new files (or delete the import of any scss files you deleted) into the style.scss file.
