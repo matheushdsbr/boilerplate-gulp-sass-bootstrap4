@@ -17,7 +17,7 @@ git clone https://github.com/matheushenrique1/boilerplate-gulp-sass-bootstrap4.g
 https://classic.yarnpkg.com/en/docs/install
 ```
 
-#### 3 - How it works
+## How it works
 
 It uses Gulp as a task manager.
 
@@ -27,19 +27,19 @@ Some tasks are {
   watch: to monitor changes to the scss and js files.
 }
 
-#### 4 - Install Dependencies
+## Install Dependencies
 
 ```
 yarn install
 ```
 
-#### 5 - To initializes the localhost server. http://localhost:3000/
+#### To initializes the localhost server. http://localhost:3000/
 
 ```
 yarn start
 ```
 
-#### 4 - How to use
+## How to use
 
 1- check the _variables.scss file and configure the best way for your project.
 
