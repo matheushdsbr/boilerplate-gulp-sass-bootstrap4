@@ -11,7 +11,7 @@ function style() {
     .pipe(browserSync.stream());
 }
 
-//copy bootstrap, jquery, popper.js
+//copy bootstrap, jquery, popper.js to js folder
 function copyjs() {
   return gulp
     .src([
@@ -22,7 +22,7 @@ function copyjs() {
     .pipe(gulp.dest("app/src/js"));
 }
 
-//style bootstrap
+// copy bootstrap. css to css folder
 function copystyle() {
   return gulp
     .src([
@@ -31,7 +31,7 @@ function copystyle() {
     .pipe(gulp.dest("app/src/css"));
 }
 
-//gulp-watch
+//to monitor changes to the scss and js files
 function watch() {
   browserSync.init({
     server: {
