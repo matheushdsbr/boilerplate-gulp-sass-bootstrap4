@@ -22,8 +22,8 @@ git clone https://github.com/matheushenrique1/boilerplate-gulp-sass-bootstrap4.g
 It uses Gulp as a task manager.
 
 Some tasks are {<br/>
-  copyjs: copy bootstrap, jquery, popper.js to the js folder.<br/>
-  copystyle: copy style bootstrap to the folder css.<br/>
+  copyjs: copy bootstrap.js, jquery.js, popper.js to the js folder.<br/>
+  copystyle: copy bootstrap.css to the folder css.<br/>
   watch: to monitor changes to the scss and js files.<br/>
 }<br/>
 
