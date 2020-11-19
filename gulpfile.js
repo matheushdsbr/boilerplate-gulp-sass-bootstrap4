@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const browserSync = require("browser-sync").create();
+const concat = require('gulp-concat');
 
 //compile scss into css
 function style() {
@@ -11,14 +12,11 @@ function style() {
     .pipe(browserSync.stream());
 }
 
-//copy bootstrap, jquery, popper.js to js folder
-function copyjs() {
+//concatenate bootstrap.js, jquery.js, popper.js files to build.js file in js folder
+function concatjs() {
   return gulp
-    .src([
-      "node_modules/jquery/dist/jquery.js",
-      "node_modules/popper.js/dist/umd/popper.js",
-      "node_modules/bootstrap/dist/js/bootstrap.js"
-    ])
+    .src(["node_modules/jquery/dist/jquery.js", "node_modules/popper.js/dist/umd/popper.js", "node_modules/bootstrap/dist/js/bootstrap.js"])
+    .pipe(concat("build.js"))
     .pipe(gulp.dest("app/src/js"));
 }
 
@@ -47,4 +45,4 @@ function watch() {
 exports.style = style;
 exports.watch = watch;
 exports.copystyle = copystyle;
-exports.copyjs = copyjs;
+exports.concatjs = concatjs;
